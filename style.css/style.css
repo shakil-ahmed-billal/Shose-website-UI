@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -20,7 +20,6 @@ p{
     padding: 18px 34px;
     border-radius: 10px;
     font-size: 1rem;
-    margin-top: 25px;
     border: none;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -65,7 +64,7 @@ nav>ul>li{
     padding-bottom: 130px;
 }
 .banner-img{
-    width: 500px;
+    max-width: 500px;
 }
 .banner-img>img{
     width: 100%;
@@ -79,8 +78,95 @@ nav>ul>li{
     font-size: 5rem;
     color: rgb(48, 47, 47);
     margin-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif;
 }
 .banner-contant>h1>span{
     color: rgb(251, 110, 59);
 }
+.banner-btn{
+    margin-top: 40px;
+}
 /* banenr container style end */
+/* product section container start */
+.product{
+    margin: 0 auto;
+    width: 80%;
+}
+.product>h1{
+    margin: 50px 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.product-container{
+    display: flex;
+    justify-content: space-between;
+}
+.items{
+    max-width: 340px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+.items>img{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+.items>h2{
+    margin-left: 20px;
+    color: rgb(54, 57, 88);
+    font-weight: 900;
+    letter-spacing: 9%;
+}
+.items>p{
+    margin-left: 20px;
+    margin: 15px 0 20px 20px;
+}
+.buy-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 12px 0 23px;
+}
+.buy-section>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: red;
+}
+/* product section container end */
+/* mobile view responsive section style start  */
+@media screen and (max-width:576px) {
+    /* navbar container */
+    nav{
+        margin: 0 auto;
+        width: 90%;
+        padding-top: 20px;
+    }
+    nav>ul{
+        display: none;
+    }
+    /* banner container section
+    */
+    .banner{
+        margin: 0 auto;
+        width: 90%;
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .banner-contant>h1{
+        font-size: 3.5rem;
+        margin-top: 10px;
+    }
+    /* product container */
+    .product-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+
+/* mobile view responsive section style end  */
